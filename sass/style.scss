@@ -1,0 +1,72 @@
+// My color scheme
+$stormy: #494e6b;
+$cloud: #98878f;
+$sunset: #985e6d;
+$evening: #192231;
+$white: #f1f1f1;
+
+// My fonts
+@import url('https://fonts.googleapis.com/css?family=Prompt:200|Roboto');
+$headline-font: 'Prompt', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+// background patterns (from heropattern.com)
+$bg-cage: url(../images/cage.svg);
+$bg-cboard: url(../images/circuit-board.svg);
+$bg-diag: url(../images/diagonal-lines.svg);
+$bg-cloud: url(../images/endless-clouds.svg);
+$bg-eyes: url(../images/eyes.svg);
+$bg-cogs: url(../images/floating-cogs.svg);
+$bg-hounds: url(../images/houndstooth.svg);
+$bg-signal: url(../images/signal.svg);
+
+body {
+  background-color: $evening;
+  background-image: $bg-cogs;
+  color: $sunset;
+  font-family: $body-font;
+  font-size: 16px;
+  padding: 3.125em 0;
+  margin: 0 auto;
+}
+
+section {
+  background-color: $white;
+  color: $evening;
+}
+
+h1 {
+  font-family: $headline-font;
+  font-size: 2.5em;
+  letter-spacing: .125em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 60%;
+}
+
+p.intro {
+  font-size: 1.25em;
+  letter-spacing: .02em;
+  color: $white;
+  text-align: center;
+  border-top: 1px solid $cloud;
+  border-bottom: 1px solid $cloud;
+  padding: 1.5em;
+  margin: 1em auto 0 auto;
+  width: 60%;
+}
+
+h2 {
+  font-family: $headline-font;
+  font-size: 1.5em;
+  letter-spacing: .125em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: .85em;
+  width: 60%;
+  margin: 0 auto;
+}
