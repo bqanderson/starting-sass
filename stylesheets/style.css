@@ -1,8 +1,83 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Prompt:200|Roboto");
-/* line 23, ../sass/style.scss */
+/* line 3, ../sass/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 18, ../sass/style.scss */
 body {
-  background-color: #192231;
-  background-image: url(../images/floating-cogs.svg);
+  line-height: 1;
+}
+
+/* line 21, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: normal;
+}
+
+/* line 25, ../sass/style.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 28, ../sass/style.scss */
+blockquote {
+  quotes: none;
+}
+
+/* line 31, ../sass/style.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 35, ../sass/style.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 39, ../sass/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 43, ../sass/style.scss */
+a img {
+  border: none;
+}
+
+/* =Scss Variables
+-------------------------------------------------------------- */
+/* =Global
+-------------------------------------------------------------- */
+/* line 73, ../sass/style.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 81, ../sass/style.scss */
+body {
+  background-color: #494e6b;
   color: #985e6d;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -10,48 +85,133 @@ body {
   margin: 0 auto;
 }
 
-/* line 33, ../sass/style.scss */
+/* Headings */
+/* line 92, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Prompt", sans-serif;
+  line-height: 1;
+}
+
+/* line 96, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: #494e6b;
+}
+
+/* line 100, ../sass/style.scss */
+a:hover {
+  color: #2a2d3e;
+}
+
+/* =Styles
+-------------------------------------------------------------- */
+/* line 107, ../sass/style.scss */
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 111, ../sass/style.scss */
+#main {
+  background-color: #494e6b;
+}
+
+/* line 116, ../sass/style.scss */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* line 122, ../sass/style.scss */
+header {
+  width: 100%;
+  height: 5em;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #192231;
+  color: #f1f1f1;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  transition: height 0.3s;
+}
+/* line 136, ../sass/style.scss */
+header h1#logo {
+  display: inline-block;
+  height: 5em;
+  line-height: 2em;
+  vertical-align: middle;
+  float: left;
+  font-family: "Prompt", sans-serif;
+  font-size: 2.5em;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 151, ../sass/style.scss */
+header nav {
+  display: inline-block;
+  float: right;
+}
+/* line 154, ../sass/style.scss */
+header nav a {
+  font-family: "Roboto", sans-serif;
+  font-size: .85em;
+  line-height: 5em;
+  margin-right: 1.5em;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 166, ../sass/style.scss */
+header nav a:hover {
+  color: #7f6d75;
+}
+
+/* line 173, ../sass/style.scss */
 section {
-  background-color: #f1f1f1;
+  padding: 5em 0 4em 0;
+}
+/* line 175, ../sass/style.scss */
+section.sunset {
+  background-color: #98878f;
   color: #192231;
 }
 
-/* line 38, ../sass/style.scss */
-h1 {
-  font-family: "Prompt", sans-serif;
-  font-size: 2.5em;
-  letter-spacing: .125em;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto;
-  width: 60%;
-}
-
-/* line 48, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 p.intro {
   font-size: 1.25em;
   letter-spacing: .02em;
   color: #f1f1f1;
   text-align: center;
-  border-top: 1px solid #98878f;
-  border-bottom: 1px solid #98878f;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
   padding: 1.5em;
-  margin: 1em auto 0 auto;
+  margin: 1em auto 1em auto;
   width: 60%;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 h2 {
   font-family: "Prompt", sans-serif;
   font-size: 1.5em;
   letter-spacing: .125em;
-  text-align: center;
   text-transform: uppercase;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 p {
   font-size: .85em;
-  width: 60%;
   margin: 0 auto;
 }
