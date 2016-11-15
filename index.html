@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Starting with SASS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+<!-- meta and title -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Starting with SASS</title>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+<!-- javascript -->
+<script src="script/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 225,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
 </head>
 
 <body>
@@ -13,7 +37,7 @@
 
 <header>
   <div class="container clearfix">
-    <h1 id="logo">Brian/Q/Anderson</h1>
+    <h1 id="logo">Brian<span class="qtag">/Q/</span>Anderson</h1>
     <nav>
       <a href="">work</a>
       <a href="">resume</a>
@@ -25,7 +49,7 @@
 
 <div id="main">
   <div id="content">
-    <section>
+    <section id="intro">
       <div class="container">
         <p class="intro">
           Front end developer, with a passion for creative solutions,
@@ -50,6 +74,47 @@
           chartreuse biodiesel poutine. Migas hammock tilde, ennui pickled leggings
           franzen try-hard copper mug. Pop-up street art disrupt, microdosing af semiotics
           lo-fi woke flannel trust fund four dollar toast cliche offal.
+        </p>
+        <p>
+          Chillwave unicorn direct trade celiac, normcore slow-carb vinyl beard kale
+          chips mumblecore. Hoodie pour-over +1, truffaut schlitz single-origin coffee
+          hammock pork belly roof party heirloom cronut neutra pinterest listicle.
+          Keytar selvage kombucha tacos, photo booth umami slow-carb humblebrag seitan
+          VHS letterpress williamsburg bespoke. Swag disrupt austin PBR&amp;B copper mug.
+          DIY pour-over live-edge, salvia disrupt venmo cronut you probably haven't
+          heard of them tumeric semiotics swag. Bitters blog tofu kickstarter. Hella 90's
+          tumeric viral, synth paleo selvage poutine chartreuse knausgaard normcore
+          freegan hot chicken pour-over kombucha.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>
+          Welcome back Carter!
+        </h2>
+        <p>
+          Twee selvage unicorn plaid, knausgaard thundercats kale chips gluten-free
+          marfa semiotics banjo shabby chic franzen. Banjo drinking vinegar knausgaard,
+          trust fund master cleanse tote bag <a href="">listicle chia</a> chicharrones bespoke neutra.
+          Put a bird on it austin sriracha, kickstarter narwhal pinterest schlitz tofu
+          heirloom vaporware swag gochujang. Activated charcoal chia hell of, vinyl
+          blue bottle beard distillery shabby chic. Migas shoreditch coloring book
+          chartreuse biodiesel poutine. Migas hammock tilde, ennui pickled leggings
+          franzen try-hard copper mug. Pop-up street art disrupt, microdosing af semiotics
+          lo-fi woke flannel trust fund four dollar toast cliche offal.
+        </p>
+        <p>
+          Chillwave unicorn direct trade celiac, normcore slow-carb vinyl beard kale
+          chips mumblecore. Hoodie pour-over +1, truffaut schlitz single-origin coffee
+          hammock pork belly roof party heirloom cronut neutra pinterest listicle.
+          Keytar selvage kombucha tacos, photo booth umami slow-carb humblebrag seitan
+          VHS letterpress williamsburg bespoke. Swag disrupt austin PBR&amp;B copper mug.
+          DIY pour-over live-edge, salvia disrupt venmo cronut you probably haven't
+          heard of them tumeric semiotics swag. Bitters blog tofu kickstarter. Hella 90's
+          tumeric viral, synth paleo selvage poutine chartreuse knausgaard normcore
+          freegan hot chicken pour-over kombucha.
         </p>
       </div>
     </section>

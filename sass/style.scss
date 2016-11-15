@@ -79,12 +79,12 @@ $bg-signal: url(../images/signal.svg);
 }
 
 body {
-  background-color: $stormy;
+  background-color: $evening;
   // background-image: $bg-cogs;
   color: $sunset;
   font-family: $body-font;
   font-size: 16px;
-  padding: 3.125em 0;
+  // padding: 3.125em 0;
   margin: 0 auto;
 }
 
@@ -95,10 +95,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 a {
     text-decoration:none;
-    color:$stormy;
+    color: darken($white, 50%);
 }
 a:hover {
-    color: darken($stormy, 15%);
+    color: darken($white, 75%);
 }
 
 
@@ -147,13 +147,16 @@ header {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    span.qtag {
+      color: $cloud;
+    }
   }
   nav {
     display: inline-block;
     float: right;
     a {
       font-family: $body-font;
-      font-size: .85em;
+      font-size: 1em;
       line-height: 5em;
       margin-right: 1.5em;
       color: $white;
@@ -168,13 +171,38 @@ header {
       }
     }
   }
+  &.smaller {
+    height: 2.5em;
+    h1#logo {
+      height: 2.5em;
+      font-size: 1.25em;
+      line-height: 1.75em;
+    }
+    nav {
+      a {
+        font-size: .75em;
+        line-height: 3em;
+      }
+    }
+  }
 }
 
 section {
-  padding: 5em 0 4em 0;
+  padding: 2.5em 0;
+  background-color: $stormy;
+  color: darken($white, 18%);
+  h2 {
+    color: $cloud;
+  }
+  &#intro {
+    margin-top: 5em;
+  }
   &.sunset {
     background-color: $cloud;
     color: $evening;
+    h2 {
+      color: $evening;
+    }
   }
 }
 
@@ -187,18 +215,19 @@ p.intro {
   border-bottom: 1px solid $white;
   padding: 1.5em;
   margin: 1em auto 1em auto;
-  width: 60%;
+  width: 70%;
 }
 
 h2 {
   font-family: $headline-font;
   font-size: 1.5em;
+  line-height: 1em;
   letter-spacing: .125em;
   text-transform: uppercase;
 }
 
 p {
-  font-size: .85em;
-  // width: 60%;
-  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.25em;
+  padding-top: 1.25em;
 }
