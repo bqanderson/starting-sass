@@ -156,7 +156,7 @@ header h1#logo {
 }
 /* line 150, ../sass/style.scss */
 header h1#logo span.qtag {
-  color: #98878f;
+  color: #7f6d75;
 }
 /* line 154, ../sass/style.scss */
 header nav {
@@ -210,18 +210,19 @@ section h2 {
 /* line 197, ../sass/style.scss */
 section#intro {
   margin-top: 5em;
+  background-image: url(../images/circuit-board.svg);
 }
-/* line 200, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 section.sunset {
   background-color: #98878f;
   color: #192231;
 }
-/* line 203, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 section.sunset h2 {
   color: #192231;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 p.intro {
   font-size: 1.25em;
   letter-spacing: .02em;
@@ -234,7 +235,7 @@ p.intro {
   width: 70%;
 }
 
-/* line 221, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 h2 {
   font-family: "Prompt", sans-serif;
   font-size: 1.5em;
@@ -243,7 +244,7 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 229, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 p {
   font-size: 1em;
   line-height: 1.25em;

@@ -148,7 +148,7 @@ header {
     -ms-transition: all 0.3s;
     transition: all 0.3s;
     span.qtag {
-      color: $cloud;
+      color: darken($cloud, 10%);
     }
   }
   nav {
@@ -196,6 +196,7 @@ section {
   }
   &#intro {
     margin-top: 5em;
+    background-image: $bg-cboard;
   }
   &.sunset {
     background-color: $cloud;
