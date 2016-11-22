@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- meta and title -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Brian Q. Anderson | Front End Developer</title>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+<!-- javascript -->
+<script src="script/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 225,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+  <div class="container clearfix">
+    <h1 id="logo"><a href="index.html" class="logo">Brian<span class="qtag">/Q/</span>Anderson</a></h1>
+    <nav>
+      <a href="">work</a>
+      <a href="resume.html">resume</a>
+      <a href="">contact</a>
+      <a href="">blog</a>
+    </nav>
+  </div>
+</header><!-- end header -->
+
+<div id="main">
+  <div id="content">
+    <section class="secondary">
+      <div class="container">
+        <h1>Techical Skills</h1>        
+      </div>
+    </section>
+  </div>
+
+</div><!-- end #main -->
+
+</div><!-- end #wrapper -->
+
+</body>
+</html>

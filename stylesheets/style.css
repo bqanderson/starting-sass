@@ -1,6 +1,6 @@
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Prompt:200|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Prompt:200|Roboto:300,700|Roboto+Condensed:300,400,700");
 /* line 3, ../sass/style.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -66,7 +66,7 @@ a img {
 -------------------------------------------------------------- */
 /* =Global
 -------------------------------------------------------------- */
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 *,
 *:before,
 *:after {
@@ -75,176 +75,217 @@ a img {
   box-sizing: border-box;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 body {
-  background-color: #192231;
-  color: #985e6d;
+  background-color: #373737;
+  color: #373737;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 auto;
 }
 
 /* Headings */
-/* line 92, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Prompt", sans-serif;
   line-height: 1;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 a {
   text-decoration: none;
-  color: #727272;
-}
-
-/* line 100, ../sass/style.scss */
-a:hover {
-  color: #323232;
 }
 
 /* =Styles
 -------------------------------------------------------------- */
-/* line 107, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 #wrapper {
   width: 100%;
-  margin: 0 auto;
 }
 
-/* line 111, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 #main {
-  background-color: #494e6b;
+  background-color: #c0b283;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .container {
   width: 80%;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 header {
   width: 100%;
-  height: 5em;
+  height: 7em;
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #192231;
-  color: #f1f1f1;
+  background-color: #373737;
+  color: #f4f4f4;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
   transition: height 0.3s;
 }
-/* line 136, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 header h1#logo {
-  display: inline-block;
-  height: 5em;
   line-height: 2em;
   vertical-align: middle;
-  float: left;
   font-family: "Prompt", sans-serif;
   font-size: 2.5em;
-  color: #f1f1f1;
+  text-align: center;
+  color: #f4f4f4;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
-/* line 150, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 header h1#logo span.qtag {
-  color: #7f6d75;
+  color: #cab89f;
 }
-/* line 154, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
+header h1#logo a.logo {
+  color: #f4f4f4;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 151, ../sass/style.scss */
+header h1#logo a.logo:hover {
+  color: #cab89f;
+}
+/* line 153, ../sass/style.scss */
+header h1#logo a.logo:hover span.qtag {
+  color: #f4f4f4;
+}
+/* line 159, ../sass/style.scss */
 header nav {
-  display: inline-block;
-  float: right;
+  text-align: center;
 }
-/* line 157, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 header nav a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
   font-size: 1em;
-  line-height: 5em;
+  letter-spacing: 0.125em;
   margin-right: 1.5em;
-  color: #f1f1f1;
+  color: #f4f4f4;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 169, ../sass/style.scss */
-header nav a:hover {
-  color: #7f6d75;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 /* line 174, ../sass/style.scss */
+header nav a:hover {
+  color: #cab89f;
+}
+/* line 179, ../sass/style.scss */
 header.smaller {
   height: 2.5em;
 }
-/* line 176, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 header.smaller h1#logo {
+  display: inline-block;
+  float: left;
   height: 2.5em;
   font-size: 1.25em;
   line-height: 1.75em;
 }
-/* line 182, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
+header.smaller nav {
+  display: inline-block;
+  float: right;
+}
+/* line 191, ../sass/style.scss */
 header.smaller nav a {
   font-size: .75em;
   line-height: 3em;
 }
 
-/* line 190, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 section {
   padding: 2.5em 0;
-  background-color: #494e6b;
-  color: #c3c3c3;
+  background-color: #c0b283;
+  color: #dcd0c0;
 }
-/* line 194, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
+section h1 {
+  font-family: "Prompt", sans-serif;
+  font-size: 2.5em;
+  line-height: 1em;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+  color: #dcd0c0;
+  padding-top: 1.25em;
+}
+/* line 211, ../sass/style.scss */
+section h1:first-child {
+  padding-top: 0;
+}
+/* line 215, ../sass/style.scss */
 section h2 {
-  color: #98878f;
+  font-family: "Prompt", sans-serif;
+  font-size: 1.25em;
+  line-height: 1em;
+  color: #dcd0c0;
+  padding-top: 1.25em;
 }
-/* line 197, ../sass/style.scss */
-section#intro {
+/* line 222, ../sass/style.scss */
+section:first-child {
   margin-top: 5em;
+}
+/* line 225, ../sass/style.scss */
+section#intro {
   background-image: url(../images/circuit-board.svg);
 }
-/* line 201, ../sass/style.scss */
-section.sunset {
-  background-color: #98878f;
-  color: #192231;
+/* line 228, ../sass/style.scss */
+section.secondary {
+  background-color: #f4f4f4;
+  color: #373737;
 }
-/* line 204, ../sass/style.scss */
-section.sunset h2 {
-  color: #192231;
+/* line 231, ../sass/style.scss */
+section.secondary h1, section.secondary h2 {
+  color: #c0b283;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 p.intro {
   font-size: 1.25em;
   letter-spacing: .02em;
-  color: #f1f1f1;
+  color: #f4f4f4;
   text-align: center;
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
+  background-color: #373737;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
   padding: 1.5em;
   margin: 1em auto 1em auto;
   width: 70%;
 }
 
-/* line 222, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 h2 {
   font-family: "Prompt", sans-serif;
-  font-size: 1.5em;
+  font-size: 2.5em;
   line-height: 1em;
   letter-spacing: .125em;
   text-transform: uppercase;
+  padding-top: 1.25em;
+}
+/* line 257, ../sass/style.scss */
+h2:first-child {
+  padding-top: 0;
 }
 
-/* line 230, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 p {
   font-size: 1em;
   line-height: 1.25em;
