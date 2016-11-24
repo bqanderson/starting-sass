@@ -85,37 +85,39 @@ body {
 }
 
 /* Headings */
-/* line 91, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Prompt", sans-serif;
   line-height: 1;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
 /* =Styles
 -------------------------------------------------------------- */
-/* line 102, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 #wrapper {
   width: 100%;
 }
 
-/* line 106, ../sass/style.scss */
-#main {
-  background-color: #c0b283;
-}
-
-/* line 110, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .container {
   width: 80%;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
+.image {
+  min-width: 100%;
+  margin: 0 auto;
+  height: 25em;
+}
+
+/* line 123, ../sass/style.scss */
 header {
   width: 100%;
   height: 7em;
@@ -131,7 +133,7 @@ header {
   -ms-transition: height 0.3s;
   transition: height 0.3s;
 }
-/* line 130, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 header h1#logo {
   line-height: 2em;
   vertical-align: middle;
@@ -140,36 +142,36 @@ header h1#logo {
   text-align: center;
   color: #f4f4f4;
   text-transform: uppercase;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
-/* line 142, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 header h1#logo span.qtag {
   color: #cab89f;
 }
-/* line 145, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 header h1#logo a.logo {
   color: #f4f4f4;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
-/* line 151, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 header h1#logo a.logo:hover {
   color: #cab89f;
 }
-/* line 153, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 header h1#logo a.logo:hover span.qtag {
   color: #f4f4f4;
 }
-/* line 159, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 header nav {
   text-align: center;
 }
-/* line 161, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 header nav a {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
@@ -179,20 +181,20 @@ header nav a {
   color: #f4f4f4;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
 }
-/* line 174, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 header nav a:hover {
   color: #cab89f;
 }
-/* line 179, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 header.smaller {
   height: 2.5em;
 }
-/* line 181, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 header.smaller h1#logo {
   display: inline-block;
   float: left;
@@ -200,24 +202,22 @@ header.smaller h1#logo {
   font-size: 1.25em;
   line-height: 1.75em;
 }
-/* line 188, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 header.smaller nav {
   display: inline-block;
   float: right;
 }
-/* line 191, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 header.smaller nav a {
   font-size: .75em;
   line-height: 3em;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 section {
   padding: 2.5em 0;
-  background-color: #c0b283;
-  color: #dcd0c0;
 }
-/* line 203, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 section h1 {
   font-family: "Prompt", sans-serif;
   font-size: 2.5em;
@@ -227,11 +227,11 @@ section h1 {
   color: #dcd0c0;
   padding-top: 1.25em;
 }
-/* line 211, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 section h1:first-child {
   padding-top: 0;
 }
-/* line 215, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 section h2 {
   font-family: "Prompt", sans-serif;
   font-size: 1.25em;
@@ -239,25 +239,40 @@ section h2 {
   color: #dcd0c0;
   padding-top: 1.25em;
 }
-/* line 222, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 section:first-child {
   margin-top: 5em;
 }
-/* line 225, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 section#intro {
+  background-color: #c0b283;
   background-image: url(../images/circuit-board.svg);
 }
-/* line 228, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
+section.primary {
+  background-color: #c0b283;
+  color: #dcd0c0;
+}
+/* line 238, ../sass/style.scss */
 section.secondary {
   background-color: #f4f4f4;
   color: #373737;
 }
-/* line 231, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 section.secondary h1, section.secondary h2 {
   color: #c0b283;
 }
+/* line 245, ../sass/style.scss */
+section.bgrnd-image {
+  height: 25em;
+  background-image: url("../images/IMG_5911.jpg");
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
-/* line 237, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 p.intro {
   font-size: 1.25em;
   letter-spacing: .02em;
@@ -271,7 +286,7 @@ p.intro {
   width: 70%;
 }
 
-/* line 250, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 h2 {
   font-family: "Prompt", sans-serif;
   font-size: 2.5em;
@@ -280,12 +295,12 @@ h2 {
   text-transform: uppercase;
   padding-top: 1.25em;
 }
-/* line 257, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 h2:first-child {
   padding-top: 0;
 }
 
-/* line 262, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 p {
   font-size: 1em;
   line-height: 1.25em;

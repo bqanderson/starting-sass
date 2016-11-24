@@ -80,6 +80,7 @@ $bg-signal: url(../images/signal.svg);
 }
 
 body {
+	// background-image: url('../images/IMG_5911.jpg');
   background-color: $lowlight;
   color: $lowlight;
   font-family: $body-font;
@@ -103,14 +104,20 @@ a {
     width:100%;
     // margin:0 auto;
 }
-#main {
-	background-color: $primary;
-}
+// #main {
+// 	background-color: $primary;
+// }
 
 .container {
     width:80%;
     margin:0 auto;
     padding:0 30px;
+}
+
+.image {
+	min-width: 100%;
+	margin: 0 auto;
+	height: 25em;
 }
 
 header {
@@ -135,19 +142,19 @@ header {
 		text-align: center;
     color: $highlight;
     text-transform: uppercase;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
     span.qtag {
       color: darken($secondary, 10%);
     }
 		a.logo {
 			color: $highlight;
-			-webkit-transition: all 0.5s;
-			-moz-transition: all 0.5s;
-			-ms-transition: all 0.5s;
-			transition: all 0.5s;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+			transition: all 0.3s;
 			&:hover {
 				color: darken($secondary, 10%);
 				span.qtag {
@@ -167,10 +174,10 @@ header {
       color: $highlight;
       text-transform: uppercase;
       text-decoration: none;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -ms-transition: all 0.5s;
-      transition: all 0.5s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      transition: all 0.4s;
       &:hover {
         color: darken($secondary, 10%)
       }
@@ -198,8 +205,6 @@ header {
 
 section {
   padding: 2.5em 0;
-  background-color: $primary;
-  color: $secondary;
   h1 {
 		font-family: $headline-font;
 		font-size: 2.5em;
@@ -223,7 +228,12 @@ section {
     margin-top: 5em;
   }
 	&#intro {
+		background-color: $primary;
 		background-image: $bg-cboard;
+	}
+	&.primary {
+		background-color: $primary;
+		color: $secondary;
 	}
   &.secondary {
     background-color: $highlight;
@@ -232,6 +242,14 @@ section {
       color: $primary;
     }
   }
+	&.bgrnd-image {
+		height: 25em;
+		background-image: url('../images/IMG_5911.jpg');
+		overflow: hidden;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	}
 }
 
 p.intro {
