@@ -112,12 +112,21 @@ a {
 
 /* line 118, ../sass/style.scss */
 .container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 1.5em .75em 1.5em;
+  border-bottom: 1px dotted #7f7f7f;
+}
+/* line 123, ../sass/style.scss */
+.container.header {
+  width: 80%;
+}
+/* line 126, ../sass/style.scss */
+.container.no-border {
+  border-bottom: none;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 header {
   width: 100%;
   height: 7em;
@@ -133,7 +142,7 @@ header {
   -ms-transition: height 0.3s;
   transition: height 0.3s;
 }
-/* line 138, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 header h1#logo {
   line-height: 2em;
   vertical-align: middle;
@@ -148,11 +157,11 @@ header h1#logo {
   -ms-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 151, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 header h1#logo span.qtag {
   color: #2e2e2e;
 }
-/* line 154, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 header h1#logo a.logo {
   color: #fff;
   -webkit-transition: color 0.3s;
@@ -160,19 +169,19 @@ header h1#logo a.logo {
   -ms-transition: color 0.3s;
   transition: color 0.3s;
 }
-/* line 160, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 header h1#logo a.logo:hover {
   color: #2e2e2e;
 }
-/* line 162, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 header h1#logo a.logo:hover span.qtag {
   color: #2e2e2e;
 }
-/* line 168, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 header nav {
   text-align: center;
 }
-/* line 170, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 header nav a {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -187,16 +196,17 @@ header nav a {
   -ms-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 183, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 header nav a:hover {
   color: #2e2e2e;
 }
-/* line 188, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 header.smaller {
   background-color: #fff;
+  opacity: 0.9;
   height: 2.5em;
 }
-/* line 191, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 header.smaller h1#logo {
   display: inline-block;
   float: left;
@@ -205,68 +215,68 @@ header.smaller h1#logo {
   font-size: 1.25em;
   line-height: 1.75em;
 }
-/* line 198, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 header.smaller h1#logo a.logo {
   color: #2e2e2e;
 }
-/* line 202, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 header.smaller nav {
   display: inline-block;
   float: right;
 }
-/* line 205, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 header.smaller nav a {
   color: #2e2e2e;
   font-size: .75em;
   line-height: 3em;
 }
 
-/* line 214, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 section {
   padding: 2.5em 0;
 }
-/* line 216, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 section h1 {
   font-family: "Raleway", sans-serif;
   font-size: 2.5em;
   line-height: 1em;
   letter-spacing: .125em;
   text-transform: uppercase;
-  color: #7f7f7f;
+  color: #2e2e2e;
   padding-top: 1.25em;
 }
-/* line 224, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 section h1:first-child {
   padding-top: 0;
 }
-/* line 228, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 section h2 {
   font-family: "Raleway", sans-serif;
   font-size: 1.25em;
   line-height: 1em;
-  color: #7f7f7f;
+  color: #2e2e2e;
   padding-top: 1.25em;
 }
-/* line 235, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 section:first-child {
   margin-top: 5em;
 }
-/* line 238, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 section.primary {
   background-color: #fff;
   color: #2e2e2e;
 }
-/* line 242, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 section.secondary {
   background-color: #ff5d4c;
   color: #2e2e2e;
 }
-/* line 245, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 section.secondary h1, section.secondary h2 {
   color: #fff;
 }
 
-/* line 251, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 p.intro {
   font-size: 1.25em;
   letter-spacing: .02em;
@@ -279,7 +289,7 @@ p.intro {
   width: 70%;
 }
 
-/* line 263, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2.5em;
@@ -288,12 +298,12 @@ h2 {
   text-transform: uppercase;
   padding-top: 1.25em;
 }
-/* line 270, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 h2:first-child {
   padding-top: 0;
 }
 
-/* line 275, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 p {
   font-size: 1em;
   line-height: 1.25em;

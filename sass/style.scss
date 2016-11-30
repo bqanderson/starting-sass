@@ -116,9 +116,16 @@ a {
 }
 
 .container {
-    width:80%;
+    width: 60%;
     margin:0 auto;
-    padding:0 30px;
+    padding:0 1.5em .75em 1.5em;
+		border-bottom: 1px dotted $secondary;
+		&.header {
+			width: 80%;
+		}
+		&.no-border {
+			border-bottom: none;
+		}
 }
 
 header {
@@ -187,6 +194,7 @@ header {
   }
   &.smaller {
 		background-color: $white;
+		opacity: 0.9;
     height: 2.5em;
     h1#logo {
 			display: inline-block;
@@ -219,7 +227,7 @@ section {
 		line-height: 1em;
 		letter-spacing: .125em;
 		text-transform: uppercase;
-		color: $secondary;
+		color: $primary;
 		padding-top: 1.25em;
 		&:first-child {
 			padding-top: 0;
@@ -229,7 +237,7 @@ section {
 		font-family: $base-font-family;
 		font-size: 1.25em;
 		line-height: 1em;
-		color: $secondary;
+		color: $primary;
 		padding-top: 1.25em;
 	}
   &:first-child {
