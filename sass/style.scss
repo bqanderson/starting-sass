@@ -54,10 +54,16 @@ $lowlight: #93be91;
 $white: #fff;
 
 // My fonts
-@import url('https://fonts.googleapis.com/css?family=Prompt:200|Roboto:300,700|Roboto+Condensed:300,400,700');
-$headline-font: 'Prompt', sans-serif;
-$body-font: 'Roboto', sans-serif;
-$pull-quote: 'Roboto Condensed', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,900');
+
+//Base Font
+$base-font-family: 'Raleway', sans-serif;
+
+//Font Weights
+$light: 200;
+$regular: 400;
+$bold: 900;
+
 
 // background patterns (from heropattern.com)
 $bg-cage: url(../images/cage.svg);
@@ -81,16 +87,17 @@ $bg-signal: url(../images/signal.svg);
 
 body {
 	// background-image: url('../images/IMG_5911.jpg');
-  background-color: $lowlight;
-  color: $lowlight;
-  font-family: $body-font;
+  background-color: $primary;
+  color: $primary;
+  font-family: $base-font-family;
   font-size: 18px;
   margin: 0 auto;
 }
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
-  font-family: $headline-font;
+  font-family: $base-font-family;
+	font-weight: $regular;
 	line-height:1;
 }
 a {
@@ -105,19 +112,13 @@ a {
     margin:0 auto;
 }
 #main {
-	background-color: $primary;
+	background-color: $white;
 }
 
 .container {
     width:80%;
     margin:0 auto;
     padding:0 30px;
-}
-
-.image {
-	min-width: 100%;
-	margin: 0 auto;
-	height: 25em;
 }
 
 header {
@@ -128,8 +129,8 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: $lowlight;
-  color: $highlight;
+  background-color: $highlight;
+  color: $white;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
@@ -137,28 +138,29 @@ header {
   h1#logo {
     line-height: 2em;
     vertical-align: middle;
-    font-family: $headline-font;
+    font-family: $base-font-family;
+		font-weight: $regular;
     font-size: 2.5em;
 		text-align: center;
-    color: $highlight;
+    color: $white;
     text-transform: uppercase;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -ms-transition: all 0.4s;
     transition: all 0.4s;
     span.qtag {
-      color: darken($secondary, 10%);
+      color: $primary;
     }
 		a.logo {
-			color: $highlight;
+			color: $white;
 			-webkit-transition: color 0.3s;
 			-moz-transition: color 0.3s;
 			-ms-transition: color 0.3s;
 			transition: color 0.3s;
 			&:hover {
-				color: darken($secondary, 10%);
+				color: $primary;
 				span.qtag {
-					color: $highlight;
+					color: $primary;
 				}
 			}
 		}
@@ -166,12 +168,12 @@ header {
   nav {
 		text-align: center;
     a {
-      font-family: $pull-quote;
-			font-weight: 300;
+      font-family: $base-font-family;
+			font-weight: $regular;
       font-size: 1em;
 			letter-spacing: 0.125em;
       margin-right: 1.5em;
-      color: $highlight;
+      color: $white;
       text-transform: uppercase;
       text-decoration: none;
       -webkit-transition: all 0.4s;
@@ -179,23 +181,29 @@ header {
       -ms-transition: all 0.4s;
       transition: all 0.4s;
       &:hover {
-        color: darken($secondary, 10%)
+        color: $primary;
       }
     }
   }
   &.smaller {
+		background-color: $white;
     height: 2.5em;
     h1#logo {
 			display: inline-block;
 			float: left;
+			color: $primary;
       height: 2.5em;
       font-size: 1.25em;
       line-height: 1.75em;
+			a.logo {
+				color: $primary;
+			}
     }
     nav {
 			display: inline-block;
 	    float: right;
       a {
+				color: $primary;
         font-size: .75em;
         line-height: 3em;
       }
@@ -206,7 +214,7 @@ header {
 section {
   padding: 2.5em 0;
   h1 {
-		font-family: $headline-font;
+		font-family: $base-font-family;
 		font-size: 2.5em;
 		line-height: 1em;
 		letter-spacing: .125em;
@@ -218,7 +226,7 @@ section {
 		}
   }
 	h2 {
-		font-family: $headline-font;
+		font-family: $base-font-family;
 		font-size: 1.25em;
 		line-height: 1em;
 		color: $secondary;
@@ -227,37 +235,24 @@ section {
   &:first-child {
     margin-top: 5em;
   }
-	&#intro {
-		background-color: $primary;
-		background-image: $bg-cboard;
-	}
 	&.primary {
-		background-color: $primary;
-		color: $secondary;
+		background-color: $white;
+		color: $primary;
 	}
   &.secondary {
     background-color: $highlight;
-    color: $lowlight;
+    color: $primary;
     h1, h2 {
-      color: $primary;
+      color: $white;
     }
   }
-	&.bgrnd-image {
-		height: 25em;
-		background-image: url('../images/IMG_5911.jpg');
-		overflow: hidden;
-	  position: fixed;
-	  top: 0;
-	  left: 0;
-	}
 }
 
 p.intro {
   font-size: 1.25em;
   letter-spacing: .02em;
-  color: $highlight;
+  color: $primary;
   text-align: center;
-  background-color: $lowlight;
   border-top: 2px solid $highlight;
   border-bottom: 2px solid $highlight;
   padding: 1.5em;
@@ -266,7 +261,7 @@ p.intro {
 }
 
 h2 {
-  font-family: $headline-font;
+  font-family: $base-font-family;
   font-size: 2.5em;
   line-height: 1em;
   letter-spacing: .125em;
