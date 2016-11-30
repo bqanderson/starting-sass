@@ -102,6 +102,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 a {
     text-decoration:none;
+		color: $primary;
+		-webkit-transition: color 0.3s;
+		-moz-transition: color 0.3s;
+		-ms-transition: color 0.3s;
+		transition: color 0.3s;
+		&:hover {
+			color: $highlight;
+		}
+
 }
 
 
@@ -204,7 +213,14 @@ header {
       font-size: 1.25em;
       line-height: 1.75em;
 			a.logo {
-				color: $primary;
+				color: $highlight;
+				-webkit-transition: color 0.3s;
+				-moz-transition: color 0.3s;
+				-ms-transition: color 0.3s;
+				transition: color 0.3s;
+				&:hover {
+					color: $primary;
+				}
 			}
     }
     nav {
@@ -214,6 +230,13 @@ header {
 				color: $primary;
         font-size: .75em;
         line-height: 3em;
+				-webkit-transition: color 0.3s;
+				-moz-transition: color 0.3s;
+				-ms-transition: color 0.3s;
+				transition: color 0.3s;
+				&:hover {
+					color: $highlight;
+				}
       }
     }
   }
@@ -237,7 +260,7 @@ section {
 		font-family: $base-font-family;
 		font-size: 1.25em;
 		line-height: 1em;
-		color: $primary;
+		color: $highlight;
 		padding-top: 1.25em;
 	}
   &:first-child {
@@ -282,6 +305,7 @@ h2 {
 
 p {
   font-size: 1em;
+	color: $secondary;
   line-height: 1.25em;
   padding-top: 1.25em;
 }
