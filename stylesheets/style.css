@@ -77,8 +77,8 @@ a img {
 
 /* line 82, ../sass/style.scss */
 body {
-  background-color: #373737;
-  color: #373737;
+  background-color: #93be91;
+  color: #93be91;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   margin: 0 auto;
@@ -101,6 +101,12 @@ a {
 /* line 103, ../sass/style.scss */
 #wrapper {
   width: 100%;
+  margin: 0 auto;
+}
+
+/* line 107, ../sass/style.scss */
+#main {
+  background-color: #2e2e2e;
 }
 
 /* line 111, ../sass/style.scss */
@@ -126,8 +132,8 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #373737;
-  color: #f4f4f4;
+  background-color: #93be91;
+  color: #ff5d4c;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
@@ -140,32 +146,32 @@ header h1#logo {
   font-family: "Prompt", sans-serif;
   font-size: 2.5em;
   text-align: center;
-  color: #f4f4f4;
+  color: #ff5d4c;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
 }
 /* line 149, ../sass/style.scss */
 header h1#logo span.qtag {
-  color: #cab89f;
+  color: #666666;
 }
 /* line 152, ../sass/style.scss */
 header h1#logo a.logo {
-  color: #f4f4f4;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
+  color: #ff5d4c;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  transition: color 0.3s;
 }
 /* line 158, ../sass/style.scss */
 header h1#logo a.logo:hover {
-  color: #cab89f;
+  color: #666666;
 }
 /* line 160, ../sass/style.scss */
 header h1#logo a.logo:hover span.qtag {
-  color: #f4f4f4;
+  color: #ff5d4c;
 }
 /* line 166, ../sass/style.scss */
 header nav {
@@ -178,7 +184,7 @@ header nav a {
   font-size: 1em;
   letter-spacing: 0.125em;
   margin-right: 1.5em;
-  color: #f4f4f4;
+  color: #ff5d4c;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: all 0.4s;
@@ -188,7 +194,7 @@ header nav a {
 }
 /* line 181, ../sass/style.scss */
 header nav a:hover {
-  color: #cab89f;
+  color: #666666;
 }
 /* line 186, ../sass/style.scss */
 header.smaller {
@@ -224,7 +230,7 @@ section h1 {
   line-height: 1em;
   letter-spacing: .125em;
   text-transform: uppercase;
-  color: #dcd0c0;
+  color: #7f7f7f;
   padding-top: 1.25em;
 }
 /* line 216, ../sass/style.scss */
@@ -236,7 +242,7 @@ section h2 {
   font-family: "Prompt", sans-serif;
   font-size: 1.25em;
   line-height: 1em;
-  color: #dcd0c0;
+  color: #7f7f7f;
   padding-top: 1.25em;
 }
 /* line 227, ../sass/style.scss */
@@ -245,22 +251,22 @@ section:first-child {
 }
 /* line 230, ../sass/style.scss */
 section#intro {
-  background-color: #c0b283;
+  background-color: #2e2e2e;
   background-image: url(../images/circuit-board.svg);
 }
 /* line 234, ../sass/style.scss */
 section.primary {
-  background-color: #c0b283;
-  color: #dcd0c0;
+  background-color: #2e2e2e;
+  color: #7f7f7f;
 }
 /* line 238, ../sass/style.scss */
 section.secondary {
-  background-color: #f4f4f4;
-  color: #373737;
+  background-color: #ff5d4c;
+  color: #93be91;
 }
 /* line 241, ../sass/style.scss */
 section.secondary h1, section.secondary h2 {
-  color: #c0b283;
+  color: #2e2e2e;
 }
 /* line 245, ../sass/style.scss */
 section.bgrnd-image {
@@ -276,11 +282,11 @@ section.bgrnd-image {
 p.intro {
   font-size: 1.25em;
   letter-spacing: .02em;
-  color: #f4f4f4;
+  color: #ff5d4c;
   text-align: center;
-  background-color: #373737;
-  border-top: 2px solid #f4f4f4;
-  border-bottom: 2px solid #f4f4f4;
+  background-color: #93be91;
+  border-top: 2px solid #ff5d4c;
+  border-bottom: 2px solid #ff5d4c;
   padding: 1.5em;
   margin: 1em auto 1em auto;
   width: 70%;
