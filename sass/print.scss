@@ -1,3 +1,72 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+
+ header {
+   width: 100%;
+   height: 5em;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 999;
+   background-color: $highlight;
+   color: $white;
+   -webkit-transition: height 0.3s;
+   -moz-transition: height 0.3s;
+   -ms-transition: height 0.3s;
+   transition: height 0.3s;
+   h1#logo {
+     display: inline-block;
+     height: 5em;
+     line-height: 2em;
+     vertical-align: middle;
+     float: left;
+     font-family: $headline-font;
+     font-size: 2.5em;
+     color: $white;
+     text-transform: uppercase;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     -ms-transition: all 0.3s;
+     transition: all 0.3s;
+     span.qtag {
+       color: $cloud;
+     }
+   }
+   nav {
+     display: inline-block;
+     float: right;
+     a {
+       font-family: $body-font;
+       font-size: 1em;
+       line-height: 5em;
+       margin-right: 1.5em;
+       color: $white;
+       text-transform: uppercase;
+       text-decoration: none;
+       -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+       -ms-transition: all 0.3s;
+       transition: all 0.3s;
+       &:hover {
+         color: darken($cloud, 10%)
+       }
+     }
+   }
+   &.smaller {
+     height: 2.5em;
+     h1#logo {
+       height: 2.5em;
+       font-size: 1.25em;
+       line-height: 1.75em;
+     }
+     nav {
+       a {
+         font-size: .75em;
+         line-height: 3em;
+       }
+     }
+   }
+ }
