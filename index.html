@@ -13,27 +13,32 @@
 <!-- javascript -->
 <script src="script/classie.js"></script>
 <script>
-    function init() {
-        window.addEventListener('scroll', function(e){
-            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 225,
-                header = document.querySelector("header");
-            if (distanceY > shrinkOn) {
-                classie.add(header,"smaller");
-            } else {
-                if (classie.has(header,"smaller")) {
-                    classie.remove(header,"smaller");
-                }
-            }
-        });
-    }
-    window.onload = init();
+  function init() {
+      window.addEventListener('scroll', function(e){
+          var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+              shrinkOn = 225,
+              header = document.querySelector("header");
+          if (distanceY > shrinkOn) {
+              classie.add(header,"smaller");
+          } else {
+              if (classie.has(header,"smaller")) {
+                  classie.remove(header,"smaller");
+              }
+          }
+      });
+  }
+  window.onload = init();
 </script>
 </head>
 
 <body>
 
 <div id="wrapper">
+  <div class="contact-wrapper">
+    <div class="container header no-border clearfix">
+      <p class="contact-into">p: (612)889-2136 | e: bqanderson@me.com | github: https://github.com/bqanderson </p>
+    </div>
+  </div>
 
 <header>
   <div class="container clearfix header no-border">
@@ -52,7 +57,7 @@
       <div class="container header no-border">
         <p class="intro">
           Front end developer, with a passion for creative solutions,
-          a history with classic design and a constant focus on user experience.
+          a history of classic design and a constant focus on user experience.
         </p>
       </div>
     </section>
@@ -68,7 +73,7 @@
         </h2>
         <p>
           As web developers, we have all used this phrase. It's a starting point, an
-          ensurance that we can communicate, that we have a handle on a particular language,
+          ensurance that we can communicate, that we have a basic handle on a particular language,
           framework or library.
         </p>
         <p>
@@ -77,7 +82,7 @@
           ideas, and values.
         </p>
         <p>
-          So, once again: Hello World!
+          So, once again: <span class="emphasis">Hello World!</span>
         </p>
       </div>
     </section>
@@ -85,37 +90,57 @@
     <section>
       <div class="photo-break" style="background-image: url(images/IMG_5911.jpg)"></div>
       <div id="resume" class="container">
-        <h2>
-          Technical Skills
-        </h2>
-        <ul class="pull-quote">
-          <li class="skills">MongoDB</li>
-          <li class="skills">Express.js</li>
-          <li class="skills">AngularJS</li>
-          <li class="skills">Node.js</li>
-        </ul>
-        <ul class="pull-quote">
-          <li class="skills">JavaScript</li>
-          <li class="skills">jQuery</li>
-          <li class="skills">PostgreSQL</li>
-          <li class="skills">GitHub</li>
-        </ul>
-        <ul class="pull-quote">
-          <li class="skills">SASS</li>
-          <li class="skills">HTML5</li>
-          <li class="skills">CSS3</li>
-          <li class="skills">D3.js</li>
-        </ul>
-        <p>
-          Chillwave unicorn direct trade celiac, normcore slow-carb vinyl beard kale
-          chips mumblecore. Hoodie pour-over +1, truffaut schlitz single-origin coffee
-          hammock pork belly roof party heirloom cronut neutra pinterest listicle.
-          Keytar selvage kombucha tacos, photo booth umami slow-carb humblebrag seitan
-          VHS letterpress williamsburg bespoke. Swag disrupt austin PBR&amp;B copper mug.
-          DIY pour-over live-edge, salvia disrupt venmo cronut you probably haven't
-          heard of them tumeric semiotics swag. Bitters blog tofu kickstarter. Hella 90's
-          tumeric viral, synth paleo selvage poutine chartreuse knausgaard normcore
-          freegan hot chicken pour-over kombucha.
+        <h2 class="resume-head">Technical Skills</h2>
+
+        <div class="row">
+          <div class="skills">
+            <ul class="pull-quote">
+              <li class="skill">MongoDB</li>
+              <li class="skill">Express.js</li>
+              <li class="skill">AngularJS</li>
+              <li class="skill">Node.js</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <ul class="pull-quote">
+              <li class="skill">JavaScript</li>
+              <li class="skill">jQuery</li>
+              <li class="skill">PostgreSQL</li>
+              <li class="skill">GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <ul class="pull-quote">
+              <li class="skill">SASS</li>
+              <li class="skill">HTML5</li>
+              <li class="skill">CSS3</li>
+              <li class="skill">D3.js</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="resume-head">Experience</h2>
+        <p class="employer">Prime Digital Academy //
+          <span class="job-title">Full Stack Software Development Student</span><br />
+          <span class="job-date">May 2016 to Septmeber 2016</span></p>
+        <p class="description">
+          <span class="job-title">Group Project: Substainable Stillwater - MN</span><br />
+          Worked on a team of five developers with Sustainable Stillwater: a community engagement
+          nonprofit working to improve the health, economic vitality, and environment wellness of
+          Stillwater, Minnesota. Created an application which would track and story measurable,
+          cumulative progress across numerous nonprofit initiatives within their community. To address
+          this need, we created an interactive map which reflects community engagement, progress
+          towards the needs of the community, and how community members can get involved. <br />
+          <span class="job-title">Technologies: </span>MongoDB, Express.js, AngularJS, Node.js, and D3.js.
+        </p>
+        <p class="description">
+          <span class="job-title">Solo Project: Bella Luna Studios at The Wolf House - NE Minneapolis</span><br />
+          Created two side-by-side Single Page Apps, one that would allow an administrator to
+          add new events, edit or remove current events and send group emails to multiple
+          followers quickly and easily. The other SPA was set for end-users to view information
+          about the location, current and upcoming events as well as requesting an artist in residency.
         </p>
       </div>
     </section>

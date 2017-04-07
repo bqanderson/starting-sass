@@ -1,72 +1,78 @@
-/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
--------------------------------------------------------------- */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css?family=Prompt:300,300i,500|Raleway:300,300i,500,500i,700");
-/* line 3, ../sass/style.scss */
+/* line 5, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  background: transparent;
-  border: 0;
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 18, ../sass/style.scss */
-body {
+/* line 22, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 21, ../sass/style.scss */
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-  font-weight: normal;
-}
-
-/* line 25, ../sass/style.scss */
+/* line 24, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 28, ../sass/style.scss */
-blockquote {
-  quotes: none;
-}
-
-/* line 31, ../sass/style.scss */
-blockquote:before, blockquote:after {
-  content: '';
-  content: none;
-}
-
-/* line 35, ../sass/style.scss */
-del {
-  text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
-/* line 39, ../sass/style.scss */
+/* line 26, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 28, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
+}
+
+/* line 116, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
 }
 
 /* =Scss Variables
 -------------------------------------------------------------- */
 /* =Global
 -------------------------------------------------------------- */
-/* line 81, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 *,
 *:before,
 *:after {
@@ -75,10 +81,9 @@ a img {
   box-sizing: border-box;
 }
 
-/* line 89, ../sass/style.scss */
-body {
+/* line 40, ../sass/style.scss */
+html {
   background-color: #2e2e2e;
-  color: #2e2e2e;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -86,14 +91,14 @@ body {
 }
 
 /* Headings */
-/* line 100, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Prompt", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.25;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 a {
   text-decoration: none;
   color: #2e2e2e;
@@ -102,60 +107,81 @@ a {
   -ms-transition: color 0.3s;
   transition: color 0.3s;
 }
-/* line 112, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 a:hover {
   color: #ff5d4c;
 }
 
+/* =Mixins
+-------------------------------------------------------------- */
 /* =Styles
 -------------------------------------------------------------- */
-/* line 121, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 #wrapper {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 #main {
   background-color: #fff;
 }
 
-/* line 129, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .container {
   width: 60%;
   margin: 0 auto;
-  padding: 0 1.5em .75em 1.5em;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 134, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .container.header {
   width: 80%;
 }
-/* line 137, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .container.no-border {
   border-bottom: none;
 }
 
-/* line 142, ../sass/style.scss */
-header {
+/* line 116, ../sass/style.scss */
+div.contact-wrapper {
   width: 100%;
-  height: 5em;
+  height: 1.5rem;
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
+  display: inline-block;
+  background-color: #2e2e2e;
+  color: #fff;
+}
+/* line 127, ../sass/style.scss */
+div.contact-wrapper p.contact-into {
+  float: right;
+  font-size: 0.75em;
+  padding: 0.25em;
+  color: #ff5d4c;
+}
+
+/* line 135, ../sass/style.scss */
+header {
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+  position: fixed;
+  top: 1.5rem;
+  left: 0;
+  z-index: 999;
   background-color: #ff5d4c;
   color: #fff;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
-  transition: height 0.3s;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
-/* line 156, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 header h1#logo {
   display: inline-block;
-  height: 5em;
   line-height: 2em;
   vertical-align: middle;
   font-family: "Prompt", Helvetica, Arial, sans-serif;
@@ -167,11 +193,11 @@ header h1#logo {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 169, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 header h1#logo span.qtag {
   color: #2e2e2e;
 }
-/* line 172, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 header h1#logo a.logo {
   color: #fff;
   -webkit-transition: color 0.3s;
@@ -179,20 +205,20 @@ header h1#logo a.logo {
   -ms-transition: color 0.3s;
   transition: color 0.3s;
 }
-/* line 178, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 header h1#logo a.logo:hover {
   color: #2e2e2e;
 }
-/* line 180, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 header h1#logo a.logo:hover span.qtag {
   color: #2e2e2e;
 }
-/* line 186, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 header nav {
   display: inline-block;
   float: right;
 }
-/* line 189, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 header nav a {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -207,24 +233,24 @@ header nav a {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 202, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 header nav a:hover {
   color: #2e2e2e;
 }
-/* line 207, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 header.smaller {
   background-color: #fff;
   opacity: 0.9;
   height: 2.5em;
 }
-/* line 211, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 header.smaller h1#logo {
   color: #2e2e2e;
   height: 2.5em;
   font-size: 1.25em;
   line-height: 1.75em;
 }
-/* line 216, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 header.smaller h1#logo a.logo {
   color: #ff5d4c;
   -webkit-transition: color 0.3s;
@@ -232,26 +258,26 @@ header.smaller h1#logo a.logo {
   -ms-transition: color 0.3s;
   transition: color 0.3s;
 }
-/* line 222, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 header.smaller h1#logo a.logo:hover {
   color: #2e2e2e;
 }
-/* line 228, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 header.smaller nav a {
   color: #2e2e2e;
   font-size: .75em;
   line-height: 3em;
 }
-/* line 232, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 header.smaller nav a:hover {
   color: #ff5d4c;
 }
 
-/* line 240, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 section {
   padding: 2.5em 0;
 }
-/* line 242, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 section h1 {
   font-family: "Prompt", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
@@ -261,11 +287,11 @@ section h1 {
   color: #2e2e2e;
   padding-top: 1.25em;
 }
-/* line 250, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 section h1:first-child {
   padding-top: 0;
 }
-/* line 254, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 section h2 {
   font-family: "Prompt", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -274,26 +300,31 @@ section h2 {
   color: #ff5d4c;
   padding-top: 1.25em;
 }
-/* line 262, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
+section h2.resume-head {
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+}
+/* line 259, ../sass/style.scss */
 section:first-child {
   margin-top: 5em;
 }
-/* line 265, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 section.primary {
   background-color: #fff;
   color: #2e2e2e;
 }
-/* line 269, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 section.secondary {
   background-color: #ff5d4c;
   color: #2e2e2e;
 }
-/* line 272, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 section.secondary h1, section.secondary h2 {
   color: #fff;
 }
 
-/* line 278, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 div.photo-break {
   background: url("../images/IMG_5911.jpg") no-repeat fixed;
   background-size: cover;
@@ -304,7 +335,48 @@ div.photo-break {
   position: relative;
 }
 
-/* line 288, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
+div#resume {
+  padding-top: 3.5rem;
+}
+
+/* line 289, ../sass/style.scss */
+div.row {
+  font-size: 0;
+}
+
+/* line 293, ../sass/style.scss */
+div.skills {
+  width: 100%;
+  font-size: 1rem;
+  display: inline-block;
+}
+@media only screen and (min-width: 42.667em) {
+  /* line 293, ../sass/style.scss */
+  div.skills {
+    width: 33.33333%;
+    vertical-align: top;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  /* line 84, ../sass/style.scss */
+  div.skills:first-child {
+    padding-left: 0;
+  }
+  /* line 87, ../sass/style.scss */
+  div.skills:last-child {
+    padding-right: 0;
+  }
+}
+
+/* line 297, ../sass/style.scss */
+p {
+  font-size: 1rem;
+  color: #7f7f7f;
+  line-height: 1.5em;
+  padding-top: 1.25em;
+}
+/* line 302, ../sass/style.scss */
 p.intro {
   font-size: 1.25em;
   letter-spacing: .02em;
@@ -313,27 +385,49 @@ p.intro {
   border-top: 2px solid #ff5d4c;
   border-bottom: 2px solid #ff5d4c;
   padding: 1.5em;
-  margin: 1em auto 1em auto;
+  margin: 1em auto;
   width: 70%;
 }
-
-/* line 300, ../sass/style.scss */
-p {
-  font-size: 1em;
+/* line 313, ../sass/style.scss */
+p span.emphasis {
+  color: #ff5d4c;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* line 318, ../sass/style.scss */
+p.employer {
+  color: #2e2e2e;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* line 323, ../sass/style.scss */
+p span.job-title {
+  color: #2e2e2e;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: none;
+}
+/* line 329, ../sass/style.scss */
+p span.job-date {
+  font-size: 0.9em;
   color: #7f7f7f;
-  line-height: 1.25em;
-  padding-top: 1.25em;
+  font-weight: 300;
+  text-transform: none;
+}
+/* line 335, ../sass/style.scss */
+p.description {
+  padding: 0.5em 0;
 }
 
-/* line 307, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 ul.pull-quote {
   font-size: 1em;
   color: #7f7f7f;
   line-height: 1.25em;
   margin: 1.5em 0;
-  border-left: 2px solid #ff5d4c;
+  border-left: 1px solid #e5e5e5;
 }
-/* line 313, ../sass/style.scss */
-ul.pull-quote li.skills {
+/* line 346, ../sass/style.scss */
+ul.pull-quote li.skill {
   padding: .75em;
 }
